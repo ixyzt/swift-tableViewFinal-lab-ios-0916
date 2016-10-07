@@ -8,5 +8,20 @@
 
 import Foundation
 
-class Planet {    
+
+//Add four properties to the Planet class: name, numberOfMoons, fullOrbit, and facts. name should obviously be a String, and numberOfMoons should be an Int
+class Planet {
+    
+    var name: String
+    var numberOfMoons: Int
+    var fullOrbit: Double
+    var facts = [String]()
+    
+    init(name: String, numberOfMoons: Int, fullOrbit: Double, facts: [String]) {
+        self.name = name
+        self.numberOfMoons = numberOfMoons
+        self.fullOrbit = fullOrbit
+        self.facts = facts
+    }
+    
 }
